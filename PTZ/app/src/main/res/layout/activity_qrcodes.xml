@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.monar.ptz.QrCode">
+
+<com.libzxing.library.view.QRCodeScannerView
+    android:id="@+id/scanner_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <com.libzxing.library.view.QRCoverView
+        android:id="@+id/cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cornerLength="16dp"
+        app:cornerOutside="false"
+        app:cornerWidth="3dp"
+        app:laserVisible="true"
+        app:scanRectHeight="150dp"
+        app:scanRectWidth="150dp" />
+
+</FrameLayout>
